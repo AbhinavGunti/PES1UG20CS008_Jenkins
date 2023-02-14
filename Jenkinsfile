@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'deployed successfully'
+                echo 'SUCCESSFULLY DEPLOYED'
             }
         }
     }
@@ -25,7 +25,7 @@ pipeline {
         always {
             script {
                 if (currentBuild.result == 'FAILURE') {
-                    echo 'pipeline failed'
+                    echo 'PIPELINE FAILED'
                 }
             }
         }
